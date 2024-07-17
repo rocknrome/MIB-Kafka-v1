@@ -20,7 +20,7 @@ const sendEvent = (topic, eventType, data) => {
 producer.on('ready', () => {
   console.log('Kafka Producer is connected and ready.');
 
-  // Create a client event
+  // Example: Create a client event
   sendEvent('client-events', 'CLIENT_CREATED', { clientId: 1, name: 'Client A' });
 });
 
